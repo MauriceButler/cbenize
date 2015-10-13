@@ -16,7 +16,7 @@
     "url": "https://github.com/MauriceButler/cpsenize/issues"
   },
   "homepage": "https://github.com/MauriceButler/cpsenize#readme",
-  "keywords":[
+  "keywords": [
     "callback",
     "passing",
     "style",
@@ -30,5 +30,8 @@
     "method",
     "error",
     "catch"
-  ]
+  ],
+  "devDependencies": {
+    "tape": "^4.2.1"
+  }
 }
