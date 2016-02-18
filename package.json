@@ -1,6 +1,6 @@
 {
   "name": "cpsenize",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Wraps synchronous functions with a cps (callback passing style) function",
   "main": "index.js",
   "scripts": {
