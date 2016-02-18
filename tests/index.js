@@ -55,9 +55,21 @@ test('works with context and bind', function(t){
 });
 
 test('errors', function(t){
-    t.plan(3);
+    t.plan(1);
 
     var foo = cpsenize(add);
+
+    t.throws(function(){
+        foo(5, 6, true, function(error, result){
+            t.fail();
+        });
+    });
+});
+
+test('catch errors', function(t){
+    t.plan(3);
+
+    var foo = cpsenize(add, true);
 
     foo(5, 6, true, function(error, result){
         t.ok(error instanceof Error, 'has error');
